@@ -28,8 +28,8 @@ body {
   /*Create the card container*/
   .birthdayCard {
     position: relative;
-    width: 250px;
-    height:350px;
+    width: 350px;
+    height:450px;
     cursor: pointer;
     transform-style: preserve-3d;
     transform: perspective(2500px);
@@ -70,8 +70,8 @@ body {
   .cardFront {
     position: relative;
     background-color: #d40d84;
-    width: 250px;
-    height:350px;
+    width: 350px;
+    height:450px;
     overflow: hidden;
     transform-origin: left;
     box-shadow: inset 100px 20px 100px rgba(0,0,0,.13), 30px 0 50px rgba(0,0,0,0.1);
@@ -91,10 +91,12 @@ body {
   
   .happy {
     top:198px;
+    margin-top: 70px;
   }
   
   .toyou {
     top:123px;
+    margin-top: 30px;
   }
   
   .bday {
@@ -157,6 +159,14 @@ body {
     transform: rotate(-40deg);
   }
   
+  .decorationsTwo::before{
+    border-top: 40px solid #9b5de5;
+    top:300px;
+    left:450px;
+    transform: rotate(-5deg);
+    z-index: 1;
+  }
+  
   .wrap-decoTwo {
     transform: scaleX(-1);
     position: absolute;
@@ -180,9 +190,6 @@ body {
   }
   
   
-  
-  
-  
   .flame {
     position: absolute;
     background-color: #fb5607;
@@ -199,8 +206,8 @@ body {
   .cardInside {
     position: absolute;
     background-color:#f15bb5;
-    width: 250px;
-    height:350px;
+    width: 350px;
+    height:450px;
     z-index:-1;
     left:0;
     top:0;
@@ -222,6 +229,8 @@ body {
   p {
     font-family: 'Brush Script MT';
     color: #333;
+    font-size: 20px;
+    text-align: justify;
   }
   
   .name {
@@ -230,13 +239,13 @@ body {
 
   /* Ajuste para a imagem de substituição */
   .substitute-image {
-    width: 80%; /* Define a largura como 80% do contêiner */
+    width: 100%; /* Define a largura como 80% do contêiner */
     height: auto; /* Mantém a proporção da imagem */
-    max-height: 150px; /* Define uma altura máxima */
+    max-height: 180px; /* Define uma altura máxima */
     border-radius: 10px; /* Contorno arredondado */
     position: absolute;
-    top: -50px; /* Centraliza verticalmente */
-    left: 50%; /* Centraliza horizontalmente */
+    top: -35px; /* Centraliza verticalmente */
+    left: 80%; /* Centraliza horizontalmente */
     transform: translate(-50%, -50%); /* Move para o centro exato */
     object-fit: contain; /* Ajusta a imagem dentro do contêiner sem cortar */
   }
